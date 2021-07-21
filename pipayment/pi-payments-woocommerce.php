@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Pi Payments Gateway
  * Plugin URI: https://pitogo.app
- * Author: Techiepress
+ * Author: Carl Chang
  * Author URI: https://pitogo.app
  * Description: Local Payments Gateway for mobile.
  * Version: 0.1.0
