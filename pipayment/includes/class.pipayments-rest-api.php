@@ -58,7 +58,7 @@ class PiPayments_REST_API {
 			'httpversion' => '1.0',
 			'blocking'    => true,
 			'headers'     => array(
-			'Authorization' => 'Key ' . get_option('api_key'),
+			'Authorization' => 'Key ' . get_option('pi_api_key'),
 			),
 			'cookies'     => array(),
 		);

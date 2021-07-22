@@ -14,18 +14,18 @@ function pitogo_pi_description_fields( $description, $payment_id ) {
     
     ob_start();
 
-    echo '<div style="display: block; width:300px; height:auto;">';
-    echo '<img src="' . plugins_url('../assets/icon.png', __FILE__ ) . '">';
+    //echo '<div style="display: block; width:300px; height:auto;">';
+    //echo '<img src="' . plugins_url('../assets/icon.png', __FILE__ ) . '">';
     
 
     woocommerce_form_field(
-        'payment_number',
-        array(
-            'type' => 'text',
-            'label' =>__( 'Payment Phone Number', 'pi-payments-woo' ),
-            'class' => array( 'form-row', 'form-row-wide' ),
-            'required' => true,
-        )
+//        'payment_number',
+//        array(
+//            'type' => 'text',
+//            'label' =>__( 'Payment Phone Number', 'pi-payments-woo' ),
+//            'class' => array( 'form-row', 'form-row-wide' ),
+//            'required' => true,
+//        )
     );
 
     woocommerce_form_field(
