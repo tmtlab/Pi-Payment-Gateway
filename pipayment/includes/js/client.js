@@ -1,3 +1,21 @@
+//window.PiMockConfig = {
+//    production_domain: false,
+//    debug: true,
+//    username: 'john_doe',
+//    uid: '12345678-1234-414e-b578-42e89d1f3c02',
+//    payment_found: {
+//        amount: 1, // Amount of � to be paid
+//        memo: "Please pay for your order #12345", // User-facing explanation of the payment
+//        metadata: {orderId: 12345}, // Developer-facing metadata
+//    },
+//    payment_error: 'There has been an error with your payment',
+//    payment_cancelled: 'Your payment was cancelled',
+//}
+
+//mock pi requests when outside the Pi Browser or in dev mode
+//PiMock();
+define('piApiBase', 'https://api.minepi.com/v2/payments');
+
 jQuery(document).ready(function($){
 
     const PiNetwork = ({
@@ -17,9 +35,9 @@ jQuery(document).ready(function($){
                 console.error(error);
             });
         },
-        createPayment: function(amount = 3.14) {
+        createPayment: function(amount = $total) {
             Pi.createPayment({
-                // Amount of π to be paid:
+                // Amount of � to be paid:
                 amount,
                 // An explanation of the payment - will be shown to the user:
                 memo: "...", // e.g: "Digital kitten #1234",
@@ -61,7 +79,7 @@ jQuery(document).ready(function($){
         }
     })
     
-    $('.pi-donation-button').bind('click', [], PiNetwork.createPayment)
+    $('.pi-payment-button').bind('click', [], PiNetwork.createPayment)
 
 
     PiNetwork.authenticateUser();

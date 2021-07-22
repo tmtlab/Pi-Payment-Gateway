@@ -88,7 +88,7 @@ function pi_payment_init() {
     if( class_exists( 'WC_Payment_Gateway' ) ) {
 		require_once plugin_dir_path( __FILE__ ) . '/includes/class-wc-payment-gateway-pi.php';		
 		require_once plugin_dir_path( __FILE__ ) . '/includes/pi-order-statuses.php';
-		require_once plugin_dir_path( __FILE__ ) . '/includes/pi-checkout-description-fields.php';
+//		require_once plugin_dir_path( __FILE__ ) . '/includes/pi-checkout-description-fields.php';
 		require_once plugin_dir_path( __FILE__ ) . '/includes/class.pipayments.php';
 		require_once plugin_dir_path( __FILE__ ) . '/includes/class.pipayments-rest-api.php';
 		
